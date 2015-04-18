@@ -1,0 +1,223 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-blpyn7');
+	src:url('../fonts/icomoon.eot?#iefix-blpyn7') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-blpyn7') format('woff'),
+		url('../fonts/icomoon.ttf?-blpyn7') format('truetype'),
+		url('../fonts/icomoon.svg?-blpyn7#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+	content: "\e600";
+	margin-right 3px
+	color blue
+}
+
+.icon-twitter-old:before {
+	content: "\e601";
+	margin-right 3px
+	color #000088
+}
+
+.icon-mark-github:before {
+	content: "\f00a";
+	margin-right 3px
+	color gray
+}
+
+body
+	font-family 'Open Sans', sans-serif
+	font-size 16px
+/*utilities*/	
+.u-title
+	color #00CCFF
+	border-bottom 2px dashed #00CCFF
+	font-weight normal
+	padding-bottom 1em
+	text-align center
+.MainMenu
+	background #1E1E1E
+	text-align center
+	height 3.75em
+	position fixed
+	left 0
+	right 0
+	top 0
+	z-index 2
+.MainMenu-list
+	margin 0
+	padding 10px 0 0 0	
+.MainMenu-item
+	display inline-block
+	border 1px solid white
+	border-radius 10px 0 10px 0
+	margin-right 1em
+	cursor pointer
+	background orange
+	color white
+	&:hover
+		background rgba(#ffa500, .8)
+		//text-color black*/
+.MainMenu-link
+	//color #00DBFF
+	color white
+	font-weight bold
+	text-decoration none
+	line-height 2em 
+	margin-top 2em	
+	margin-right 1.5em	
+	margin-left 2em
+	text-align center
+.MenuBar
+	display none
+.Header
+	margin-top 3.75em	
+	background-image url('../images/bg_header2.jpg')
+	background-repeat no-repeat
+	background-position center
+	background-size cover
+	text-align center
+	padding 1.2em 0
+.Header-image	
+	border 5px solid white
+	border-radius 50%
+	width 20%
+.Header-imageContainer
+	margin 0	
+.Header-link
+.Header-name
+	color white		
+.Header-link
+	font-size 2.2em
+	font-weight bold
+	text-decoration none	
+.Header-name	
+	font-size 1.5em
+	font-weight 300
+	margin 0
+.Profile
+	text-align center
+.Profile-link
+	background orange
+	color white
+	text-decoration none
+	padding .5em 1em
+	border-radius 2em
+	margin-right .5em
+	&:hover
+		background rgba(#ffa500, .8)
+.Work
+	margin-top 2em
+	text-align center
+.Work-item
+	display inline-block	
+	margin-right 1.8em		
+	margin-bottom 1.8em		
+.Work-imageContainer
+	margin 0
+	img 
+		opacity .5
+		transition all .3 ease
+		&:hover
+				opacity 1
+				transform scale(1.1)
+.Work-description
+	font-size 1.1em
+	color #515151
+	font-style italic		
+.Footer
+	background-image url('../images/footer.jpg') 
+	background-repeat no-repeat
+	background-position center
+	background-size cover
+	text-align center
+
+.Footer-left	
+	display inline-block
+	//width 30em
+	text-align center
+	vertical-align top
+.Footer-form
+	text-align center
+	display inline-block
+	margin .3em 0 .3em 0
+
+.Footer-formInput
+.Footer-textarea
+	background white
+	border none
+	display block
+	border-radius 2em
+	margin-bottom .2em
+	padding .5em
+.Footer-textarea
+	rezise none
+.Footer-title
+	color white	
+.Footer-button
+	background orange
+	border none				
+	border-radius 1em
+	color white
+	padding .5em 1em
+	&:hover
+		background rgba(#ffa500, .8)
+@media screen and (max-width:800px)	
+	.MainMenu
+		width 80%
+		height 100%
+		margin 0
+		left -100%
+		background #1E1E1E
+		top 4.5em
+	.MainMenu-item	
+		border-radius 0
+		display block
+		float none
+		border-bottom 1px solid rgba(255, 255, 255, .3)	
+	.MenuBar
+		display block
+		//margin 0 auto
+		//background pink
+		width 100%
+		position fixed
+		top 0
+		//z-index 4
+		span
+			float right
+			font-size 30px
+		.MenuButton		
+			display block
+			padding 20px
+			background #1E1E1E
+			color white
+			font-weight bold
+			font-size 25px
+			box-sizing border-box
+			text-decoration none
+	.Profile-link		
+		span
+			display none
+	.Work-imageContainer
+		img 
+			opacity 1
+			//transition all .3 ease
+			&:hover
+					opacity 1
+					transform none
